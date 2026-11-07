@@ -5,7 +5,7 @@
 - Project: F1 2023 — Alonso vs Verstappen Analytics
 - Current phase: Phase 1 — environment setup
 - Project work day: 2
-- Git repository: local `main` has three commits; `origin` uses HTTPS; remote appears empty; author `Rafa Serichol` and numeric GitHub noreply format verified locally; user chose to save pending logs in a fourth commit; push remains paused
+- Git repository: local `main` has four commits; `origin` uses HTTPS; author `Rafa Serichol` and numeric GitHub noreply format verified locally; user authorized updating all local commit metadata and publishing to GitHub
 - Python environment: `.venv` created and activated with Python 3.12.10; VS Code interpreter verified
 
 ## Completed
@@ -31,6 +31,7 @@
 - `COMMANDS.md` and `PROGRESS.md` have documentation updates not yet committed, so the worktree is not clean.
 - User chose to correct the email and save the pending learning-log updates in a fourth local commit.
 - The screenshot showed GitHub's "Keep my email addresses private" setting off; user has not yet confirmed changing it.
+- User authorized rewriting the complete local history and pushing to GitHub to avoid publishing the work email.
 
 ## Python
 
@@ -52,8 +53,8 @@
 - Checked `git config --show-origin --get user.name`; it returned no output, so no explicit author name is configured in the checked Git config.
 - Checked `git config --show-origin --get user.email`; it returned no output, so no explicit author email is configured in the checked Git config.
 - Do not publish the current author identity without an explicit decision.
-- Next: enable "Keep my email addresses private" in GitHub Settings → Emails if not already done. Stage and commit pending logs as a fourth commit. Then confirm whether the authorized rewrite should include all four commits; do not push yet.
+- Next: save the latest log updates in a fifth local commit, rewrite all five commits with the verified GitHub noreply author identity, verify every author without exposing the email, and push `main`.
 
 ## Next exercise
 
-Three local commits are complete. The repository-local author name and numeric GitHub noreply format are verified. The user chose a fourth commit to preserve pending logs. Ensure GitHub email privacy is enabled, commit the logs, confirm rewrite scope, and keep push paused until the rewritten history is verified.
+Four local commits are complete. The user authorized rewriting all local history and publishing. Save current learning-log updates, rewrite every commit with the verified GitHub noreply identity, verify authors safely, then push `main`.

@@ -58,8 +58,16 @@ This document tracks Git and SQL commands introduced during the project. Command
 | 2026-11-07 | `git add COMMANDS.md PROGRESS.md` | Stage the pending learning-log updates. | Suggested; not executed |
 | 2026-11-07 | `git --no-pager diff --cached --stat` | Summarize staged learning-log changes before committing. | Suggested; not executed |
 | 2026-11-07 | `git status --short` | Confirm only the intended log files are staged. | Suggested; not executed |
-| 2026-11-07 | `git commit -m "Document author privacy setup"` | Save the learning-log updates in a fourth local commit. | Suggested; not executed |
-| 2026-11-07 | `git rebase --root --exec "git commit --amend --no-edit --reset-author"` | Rewrite local commits from the root using the configured author identity. | User authorized rewriting the first three; confirm whether to include the new fourth commit before running |
+| 2026-11-07 | `git commit -m "Document author privacy setup"` | Save the learning-log updates in a fourth local commit. | Executed; commit `5b6ab22` |
+| 2026-11-07 | `git log -4 --format="%h %s"` | Verify the latest four local commits. | Executed; latest is `5b6ab22` |
+| 2026-11-07 | `git status --short` | Check for uncommitted changes. | Executed; clean at verification time |
+| 2026-11-07 | `git config --local --get user.name` | Verify repository-local author name. | Executed; `Rafa Serichol` |
+| 2026-11-07 | `git config --local --get user.email` | Verify GitHub noreply format without displaying the address. | Executed; numeric noreply format verified, address masked |
+| 2026-11-07 | `git add COMMANDS.md PROGRESS.md` | Stage the latest GitHub author-privacy and progress updates. | Suggested; authorized for today's publish workflow |
+| 2026-11-07 | `git --no-pager diff --cached --stat` | Summarize staged learning-log changes. | Suggested |
+| 2026-11-07 | `git commit -m "Document GitHub author privacy"` | Save these learning-log updates as a fifth local commit. | Suggested; user authorized rewrite and publication |
+| 2026-11-07 | `git rebase --root --exec "git commit --amend --no-edit --reset-author"` | Rewrite all five local commits using the configured author identity. | Authorized by user; not yet executed |
+| 2026-11-07 | `git push -u origin main` | Publish the rewritten `main` branch to GitHub. | Authorized by user; not yet executed |
 
 ## SQL
 
