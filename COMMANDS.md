@@ -20,10 +20,21 @@ This document tracks Git and SQL commands introduced during the project. Command
 | 2026-11-07 | `git diff --cached` | Review staged changes before committing. | Executed; opened Git's pager, exited with `q` |
 | 2026-11-07 | `git status --short` | Confirm exactly which files are staged. | Executed; four intended files staged |
 | 2026-11-07 | `git --no-pager diff --cached --stat` | Summarize staged changes without opening a pager. | Executed; four files, 441 insertions |
-| 2026-11-07 | `git add COMMANDS.md PROGRESS.md` | Stage the latest updates to the learning logs before the first commit. | Suggested; not executed |
-| 2026-11-07 | `git --no-pager diff --cached --stat` | Summarize all staged changes before committing. | Suggested; not executed |
-| 2026-11-07 | `git status --short` | Confirm staged files and ensure there are no unstaged changes. | Suggested; not executed |
-| 2026-11-07 | `git commit -m "Initial project setup"` | Create the first local commit with the staged project files. | Suggested; not executed |
+| 2026-11-07 | `git add COMMANDS.md PROGRESS.md` | Stage the latest updates to the learning logs before the first commit. | Executed |
+| 2026-11-07 | `git --no-pager diff --cached --stat` | Summarize all staged changes before committing. | Executed |
+| 2026-11-07 | `git status --short` | Confirm staged files and ensure there are no unstaged changes. | Executed before commit |
+| 2026-11-07 | `git commit -m "Initial project setup"` | Create the first local commit with the staged project files. | Executed; commit `8e969b2` |
+| 2026-11-07 | `git log -1 --oneline` | Verify the latest commit. | Executed; confirmed `8e969b2` |
+| 2026-11-07 | `git show --stat --oneline --summary HEAD` | Review files and summary in the latest commit. | Executed; four intended files committed |
+| 2026-11-07 | `git status --short` | Check for remaining uncommitted changes. | Executed; clean at verification time |
+| 2026-11-07 | `git remote -v` | List configured remote repositories. | Executed; no remote configured |
+| 2026-11-07 | `git add COMMANDS.md PROGRESS.md` | Stage the latest GitHub setup and learning progress notes. | Suggested; not executed |
+| 2026-11-07 | `git --no-pager diff --cached --stat` | Summarize staged documentation changes before committing. | Suggested; not executed |
+| 2026-11-07 | `git status --short` | Confirm the intended files are staged and no other changes are pending. | Suggested; not executed |
+| 2026-11-07 | `git commit -m "Document GitHub setup"` | Save the updated logs in a second local commit. | Suggested; not executed |
+| 2026-11-07 | `git remote add origin https://github.com/Unbiunio/F1_2023.git` | Connect this local repository to the GitHub repository. | Suggested; not executed |
+| 2026-11-07 | `git remote -v` | Verify the GitHub URL configured for `origin`. | Suggested; not executed |
+| 2026-11-07 | `git push -u origin main` | Publish the `main` branch to GitHub and set its upstream. | Suggested; not executed |
 
 ## SQL
 

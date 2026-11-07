@@ -5,7 +5,7 @@
 - Project: F1 2023 — Alonso vs Verstappen Analytics
 - Current phase: Phase 1 — environment setup
 - Project work day: 2
-- Git repository: initialized locally; current branch is `main`
+- Git repository: initialized locally on `main`; first commit `8e969b2` created; GitHub repository `Unbiunio/F1_2023` exists; remote not configured yet
 - Python environment: `.venv` created and activated with Python 3.12.10; VS Code interpreter verified
 
 ## Completed
@@ -15,8 +15,10 @@
 - Created and activated `.venv` using Python 3.12.10.
 - Confirmed VS Code uses the virtual environment.
 - Added `.gitignore` entries for `AGENTS.md`, `.venv/`, `__pycache__/`, and `*.py[cod]`.
-- Initialized the local Git repository on `main`; no commit or GitHub upload yet.
-- Staged the four intended project files and checked the staged summary; no commit yet.
+- Initialized the local Git repository on `main`.
+- Created the first local commit (`8e969b2`, `Initial project setup`) with the four intended files.
+- Verified the commit contents and confirmed the working tree was clean immediately afterward.
+- The GitHub repository URL is `https://github.com/Unbiunio/F1_2023.git`; it has not been connected or pushed to yet.
 
 ## Python
 
@@ -35,9 +37,8 @@
 - Practiced: checked the Git version.
 - Practiced: `git init -b main`, `git status --short`, `git branch --show-current`, `git add`, and `git diff --cached`.
 - Learned: Git's diff may open a pager; pressing `q` exits it. `--no-pager` shows command output directly.
-- The command and progress logs have updates made after the initial staging; re-stage them before committing.
-- Next: stage the updated logs, verify the staged summary/status, then create the first local commit if the file list is correct.
+- Next: commit the current learning-log updates, configure and verify the `origin` remote, then publish `main`.
 
 ## Next exercise
 
-Re-stage `COMMANDS.md` and `PROGRESS.md`, verify that the four intended files are staged, and create the first local commit. No commit or GitHub upload has been made.
+The first local commit is complete and the GitHub repository `Unbiunio/F1_2023` exists. Next: commit the latest learning-log updates, configure `origin`, and push `main`. Nothing has been published yet.
