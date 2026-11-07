@@ -5,7 +5,7 @@
 - Project: F1 2023 — Alonso vs Verstappen Analytics
 - Current phase: Phase 1 — environment setup
 - Project work day: 2
-- Git repository: initialized locally on `main`; first commit `8e969b2` created; GitHub repository `Unbiunio/F1_2023` exists; remote not configured yet
+- Git repository: local `main` has commits `8e969b2` and `0036587`; `origin` now points to HTTPS; remote appears empty and has not received a push
 - Python environment: `.venv` created and activated with Python 3.12.10; VS Code interpreter verified
 
 ## Completed
@@ -18,7 +18,10 @@
 - Initialized the local Git repository on `main`.
 - Created the first local commit (`8e969b2`, `Initial project setup`) with the four intended files.
 - Verified the commit contents and confirmed the working tree was clean immediately afterward.
-- The GitHub repository URL is `https://github.com/Unbiunio/F1_2023.git`; it has not been connected or pushed to yet.
+- Created the second local commit (`0036587`); verified the working tree is clean and no remote is configured.
+- Configured `origin` as `https://github.com/Unbiunio/F1_2023.git` and verified HTTPS for fetch and push.
+- Checked the remote with `git ls-remote origin HEAD`; it returned no output, consistent with an empty repository.
+- Latest log changes are uncommitted; stage and commit them before pushing.
 
 ## Python
 
@@ -37,8 +40,8 @@
 - Practiced: checked the Git version.
 - Practiced: `git init -b main`, `git status --short`, `git branch --show-current`, `git add`, and `git diff --cached`.
 - Learned: Git's diff may open a pager; pressing `q` exits it. `--no-pager` shows command output directly.
-- Next: commit the current learning-log updates, configure and verify the `origin` remote, then publish `main`.
+- Next: commit the latest GitHub setup notes, then push the local `main` branch.
 
 ## Next exercise
 
-The first local commit is complete and the GitHub repository `Unbiunio/F1_2023` exists. Next: commit the latest learning-log updates, configure `origin`, and push `main`. Nothing has been published yet.
+Two local commits are complete. `origin` is configured with HTTPS, and the remote appears empty. Commit the latest setup notes and then push `main`; nothing has been published yet.
